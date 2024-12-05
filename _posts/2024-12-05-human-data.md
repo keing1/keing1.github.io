@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Human data will become a smaller drive of AI progress over time
-subtitle: There's lots to learn!
 comments: true
 mathjax: true
 ---
