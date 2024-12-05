@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Human data will become a smaller drive of AI progress over time
+title: Human data will become a smaller driver of AI progress over time
 comments: true
 mathjax: true
 ---
@@ -21,37 +21,33 @@ To be clear, I still believe the following:
 
 But despite all this, there are a number of recent trends indicating the value of human data to model improvement will decrease over time.
 
-### Why?
+## Why?
 
-#### We're running out of high quality human data. 
-
+### We're running out of high quality human data. 
 For the past 5 years, model developers were able to make each new model generation better by scaling up parameter counts and training dataset sizes in equal amounts. But continuing this data scaleup is becoming increasingly difficult due to a [shortage of unused high-quality data](https://www.bloomberg.com/news/articles/2024-11-13/openai-google-and-anthropic-are-struggling-to-build-more-advanced-ai?sref=qStSw5ze), particularly in certain high-value areas like programming. Further human data scaleups will involve: 1\) Training on data that model developers have previously avoided such as lower quality data or alternate modalities like video, and 2\) buying training data, either via partnerships with owners of private data or via paying human experts to produce high-quality data in areas of interest. Otherwise, developers will have to find ways of making their models better with the data they have.
 
-#### Reinforcement learning is growing in importance 
-
+### Reinforcement learning is growing in importance 
 RL has been an important component of LLM training at least since [InstructGPT](https://arxiv.org/abs/2203.02155). But it's always been a very short, computationally inexpensive bookend to training \- primarily designed to elicit a specific kind of behavior rather than teaching the model new capabilities. We are now seeing frontier labs use a large amount of RL training on language models to get substantial performance gains in a variety of use cases. Public examples of this include [AlphaProof](https://deepmind.google/discover/blog/ai-solves-imo-problems-at-silver-medal-level/), which reached olympiad-level math performance primarily through RL, and [o1](https://openai.com/index/learning-to-reason-with-llms/), which was able to perform at the level of top humans on math, coding, and science benchmarks in large part due to RL. In addition, a number of AI labs, [in particular DeepMind](https://www.dwarkeshpatel.com/p/demis-hassabis), have talked about the importance of leveraging RL algorithms like AlphaZero with LLMs in order to improve their planning abilities.
 
 Taking a step back, it should be unsurprising that RL is becoming more important in frontier model training. While self-supervised learning is very powerful, it is limited by the quality of the data we are able to generate. This does not mean, as some have claimed, that models trained on supervised learning cannot become superhuman in some respects, as [work in computer vision has shown](https://arxiv.org/abs/1502.01852). But there are limits nonetheless, and we are unlikely to get superior and qualitatively novel behavior through self-supervision alone. As frontier labs push to make their models superhuman across a variety of domains, reinforcement learning will be a necessary tool.
 
-#### Synthetic data can be used where human data is lacking
-
+### Synthetic data can be used where human data is lacking
 In a certain sense, RL is a fancy way of generating and then training on synthetic data. But even ignoring RL, there has been a wave of usage of synthetic data, especially in domains where model answers can be verified, like math, coding, and certain kinds of agentic tasks. Examples include [AlphaGeometry being trained](https://deepmind.google/discover/blog/alphageometry-an-olympiad-level-ai-system-for-geometry/) entirely via synthetic data to near-gold medalist Olympiad level in geometry,[^2] and [Llama 3.1 being trained](https://scontent-bos5-1.xx.fbcdn.net/v/t39.2365-6/463020162_522238820565582_8192401983671993921_n.pdf?_nc_cat=108&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=GTtSaS8zepoQ7kNvgHfeJHL&_nc_zt=14&_nc_ht=scontent-bos5-1.xx&_nc_gid=AKmumxcW6_wxf2C_3XmyGIp&oh=00_AYDREeIaP8IcnUe1FUwkZFm9gOXmoCFlPnM6lG0IIRpdFQ&oe=671A47D9) with billions of tokens of synthetic data on coding, math, and long-context reasoning.
 
 Claims that training on synthetic data will [lead to model collapse](https://www.nature.com/articles/s41586-024-07566-y) are incomplete. Adding synthetic data to your data mix can make [your model continue to improve](https://arxiv.org/abs/2410.16713) as long as you don't throw out the data you used to train the model initially. And improvements can be fairly significant. Human data is scarce in a number of domains including long-context reasoning and agentic tasks. Synthetic data could multiply the amount of available data in such domains by orders of magnitude, leading to a corresponding improvement in performance.
 
-#### Test-time compute provides a new scaling regime
-
+### Test-time compute provides a new scaling regime
 While [prior](https://arxiv.org/abs/2407.21787) [work](https://arxiv.org/pdf/2406.07394) [has](https://arxiv.org/abs/2408.06195) [shown](https://arxiv.org/pdf/2406.06592) that increasing test-time compute can be valuable for improving model performance, the o1 model represented a step-change and gave us a glimpse of how much improvement is possible. It appears likely that an increasingly large fraction of model thinking and reasoning will be done at test time. Further advancement in this domain will primarily require increased compute and improved algorithms rather than human data.
 
-### A triumvirate collapse
+## A triumvirate collapse
 
 To some degree, this suggests a collapse of the triumvirate of compute, data, and algorithms. Human data will still be relevant, and I have no doubt that frontier labs will continue to gobble up high-quality data wherever they can find it. But it will become a smaller piece of the puzzle. 
 
 Data as a whole will remain extremely important, but it will become at least partially subordinate to compute and algorithms. When the data you use is mostly human-generated, then the quality of your dataset is dependent on what you can scrape off the internet, as well as who you can pay to generate more targeted data. But when the data you use is mostly model-generated, then the quality of your dataset is determined by the quantity of compute you use and the quality of your algorithms.
 
-While this is not the subject of this post, we might ultimately see algorithmic progress also become subordinate to compute. There is [already](https://www.theinformation.com/articles/anthropic-says-its-chatbot-could-alter-its-hiring-plans?rc=qcqkcj) [evidence](https://finance.yahoo.com/news/over-25-google-code-now-151413292.html) that AI is contributing to the pace of AI R\&D. As this cycle continues, and AIs become able to do agentic tasks like running research experiments, the amount of algorithmic progress will become more closely linked to the amount of compute used in research. Automating the analysis of experimental results will allow for the productive running of a larger number of experiments. More broadly, a number of AI researchers have talked about the possibility of [fully automating AI R\&D](https://epochai.org/blog/interviewing-ai-researchers-on-automation-of-ai-rnd). If this were to occur, then algorithmic progress would be primarily determined by the amount of compute set aside for that task, at least until fundamental limits are reached.
+While this is not the subject of this post, we might ultimately see algorithmic progress also become subordinate to compute. There is [already](https://www.theinformation.com/articles/anthropic-says-its-chatbot-could-alter-its-hiring-plans?rc=qcqkcj) [evidence](https://finance.yahoo.com/news/over-25-google-code-now-151413292.html) that AI is contributing to the pace of AI R&D. As this cycle continues, and AIs become able to do agentic tasks like running research experiments, the amount of algorithmic progress will become more closely linked to the amount of compute used in research. Automating the analysis of experimental results will allow for the productive running of a larger number of experiments. More broadly, a number of AI researchers have talked about the possibility of [fully automating AI R&D](https://epochai.org/blog/interviewing-ai-researchers-on-automation-of-ai-rnd). If this were to occur, then algorithmic progress would be primarily determined by the amount of compute set aside for that task, at least until fundamental limits are reached.
 
-### Implications for AI
+## Implications for AI
 
 The reduced importance of human data suggests that AI labs should spend more of their resources on the other drivers of frontier progress. We've already seen this with compute and power \- frontier labs are spending [billions of dollars](https://www.forbes.com/sites/emilsayegh/2024/09/30/the-billion-dollar-ai-gamble-data-centers-as-the-new-high-stakes-game/) to build new data centers and secure energy contracts. In fact, two AI labs have discussed the possibility of building data centers that [cost over 100 billion dollars](https://www.theinformation.com/articles/two-ai-developers-are-plotting-125-billion-supercomputers?rc=qcqkcj). We should also expect to see AI labs push on algorithmic progress. OpenAI for one is doing this, with Altman [recently stating](https://www.reddit.com/r/ChatGPT/comments/1ggixzy/comment/luq1716/) they are focusing their efforts on o1 and its successors rather than on scaling up other kinds of models.
 
@@ -63,4 +59,4 @@ This does not mean that alignment in the general case will be easy. Model genera
 
 [^2]:  Although it did leverage a human-crafted symbolic deduction engine.
 
-[^3]:  This is slightly unfair as model developers these days don't just 'hope' \- they use extensive filtering and a number of other tricks to get the training data they want. That being said, controllability is diminished when you have to primarily train your model on a subset of internet data.
+[^3]:  This is somewhat unfair as model developers these days don't just 'hope' \- they use extensive filtering and a number of other tricks to get the training data they want. That being said, controllability is diminished when you have to primarily train your model on a subset of internet data.
