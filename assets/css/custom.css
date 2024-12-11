@@ -1,3 +1,11 @@
-.footnotes .reversefootnote {
-  display: inline !important;
+sup[role="doc-noteref"]:target:before {
+    display: inline-block !important;
+    height: 0 !important;
+    margin: 0 !important;
+}
+
+.footnote-ref:target:before {
+    display: inline-block !important;
+    height: 0 !important;
+    margin: 0 !important;
 }
