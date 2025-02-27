@@ -5,7 +5,7 @@ comments: true
 mathjax: true
 ---
 
-For two hours yesterday, I watched the twitch channel [ClaudePlaysPokemon](https://www.twitch.tv/claudeplayspokemon), which shows a Claude 3.7 Sonnet agent playing through the game Pokemon Red. Here are some limitations I observed with the agent that likely carry across to other agentic tasks:
+For two hours yesterday, I watched the twitch channel [ClaudePlaysPokemon](https://www.twitch.tv/claudeplayspokemon), which shows a Claude 3.7 Sonnet agent playing through the game Pokemon Red. Below I list some limitations I observed with the agent. I think many of these limitations will carry over to agents built on other current frontier models and on other agentic tasks.
 
 - Claude has poor visual understanding. For example, Claude would often think it was next to a character when it was clearly far away from it. It would also often misidentify objects in its field of vision
 - Claude is extremely slow. Claude tends to need to think for hundreds of tokens just to move one or two spaces or press A a single time. For example, it can sometimes take over a minute for the model to walk into a Pokemon center and heal its Pokemon. Speed will become less of a problem as inference times continue to increase, but I suspect it will still be necessary for future agents to distill common actions to not require thinking and to allow the model to reason over higher-level actions instead of each individual one
