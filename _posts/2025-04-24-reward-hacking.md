@@ -16,10 +16,10 @@ In this post, I will:
 *   Argue that more AI safety researchers should prioritize work on reward hacking, as well as provide some reasons against working on it
 *   Highlight research directions on reward hacking I believe are worth exploring
 
-Recent examples of reward hacking (more in [appendix](https://www.lesswrong.com/posts/rKC4xJFkxm6cNq4i9/reward-hacking-is-becoming-more-sophisticated-and-deliberate#Appendix))
+Recent examples of reward hacking (more in [appendix](https://keing1.github.io/2025-04-24-reward-hacking/#appendix))
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-In this section, I provide summaries of two instances of reward hacking in recent frontier models. Many additional examples can be found in the [Appendix](https://www.lesswrong.com/posts/rKC4xJFkxm6cNq4i9/reward-hacking-is-becoming-more-sophisticated-and-deliberate#Appendix), and I strongly encourage readers to explore the full set of cases.
+In this section, I provide summaries of two instances of reward hacking in recent frontier models. Many additional examples can be found in the [Appendix](https://keing1.github.io/2025-04-24-reward-hacking/#appendix), and I strongly encourage readers to explore the full set of cases.
 
 ### Cheating to win at chess
 
