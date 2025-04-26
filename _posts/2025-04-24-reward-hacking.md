@@ -48,7 +48,7 @@ Hypotheses explaining why we are seeing this now
 
 You may have noticed that nearly all of the examples of reward hacks I’ve summarized[^aswsk72v22k] came from models that received extensive RL training. I believe this is not a coincidence.
 
-In some sense, reward hacking from RL shouldn’t be too surprising, as RL trains models to take actions that get high reward, and reward hacking is sometimes a good strategy for getting high reward. More concretely, RL may teach models certain behavioral traits that make the models more prone to reward hacks. RL training can teach models to be more persistent, to find creative solutions, to try solutions that are unlikely to work if there is no better alternative, and potentially to even think about how they are evaluated, as these traits are useful towards accomplishing tasks in a diversity of environments.
+In some sense, reward hacking coming from RL shouldn’t be too surprising, as RL trains models to take actions that get high reward, and reward hacking is sometimes a good strategy for getting high reward. More concretely, RL may teach models certain behavioral traits that make the models more prone to reward hacks. RL training can teach models to be more persistent, to find creative solutions, to try solutions that are unlikely to work if there is no better alternative, and potentially to even think about how they are evaluated, as these traits are useful towards accomplishing tasks in a diversity of environments.
 
 Furthermore, if the reward signals we give models are imperfect on some fraction of tasks during RL training, which seems likely, we could explicitly reinforce reward hacking during training. Models could reward hack on those tasks during training, and then generalize to reward hack on new tasks during deployment. There is already [some](https://www.lesswrong.com/posts/Ge55vxEmKXunFFwoe/reward-hacking-behavior-can-generalize-across-tasks) [evidence](https://www.anthropic.com/research/reward-tampering) this is a risk. This would directly incentivize models to think about the limitations of our evaluations and oversight, as this kind of thinking would result in higher reward than just being [helpful, honest, and harmless](https://docs.anthropic.com/en/docs/resources/glossary#hhh).
 
@@ -88,7 +88,7 @@ First, frontier AI companies have a strong incentive to fix many kinds of reward
 
 Alternatively, if the companies cannot fully resolve the bottlenecks on their own, work on reward hacking, especially on mitigating reward hacking, could increase the rate of AI progress alongside improving safety.
 
-Third, some AI safety researchers believe that reward hacking is not particularly relevant for the emergence of severe misalignment, and that other kinds of misalignment, like scheming, are worth more study.
+Third, some AI safety researchers believe that most reward hacking is not particularly relevant for the emergence of severe misalignment, and that other kinds of misalignment, like scheming, are worth more study (though it's worth noting these categories overlap).
 
 Fourth, many valuable reward hacking experiments require the ability to perform large-scale RL experiments, which is difficult to do if you are not working in a frontier AI lab. If you are an independent researcher, this will likely close off a subset of interesting reward hacking research directions, at least until better external tooling and [model organisms](https://www.lesswrong.com/posts/ChDH335ckdvpxXaXX/model-organisms-of-misalignment-the-case-for-a-new-pillar-of-1) are developed.
 
