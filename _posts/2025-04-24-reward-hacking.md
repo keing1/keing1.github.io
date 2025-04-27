@@ -126,7 +126,7 @@ Below I list a number of research directions on reward hacking that I think woul
 Acknowledgements
 ----------------
 
-*Thanks to Isaac Dunn and James Chua for feedback on an earlier version of this post.*
+Thanks to Isaac Dunn and James Chua for feedback on an earlier version of this post.
 
 Appendix
 --------
