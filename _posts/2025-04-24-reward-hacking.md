@@ -163,7 +163,7 @@ The below text is directly copied from METR’s research post:
 
 \[[System card](https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-3-7-sonnet-system-card.pdf#page=33)\]
 
-Anthropic gave Claude 3.7 Sonnet a C++ fine-tuning script and was told to optimize it to run efficiently on a specific hardware configuration. After making the script 7x faster, Claude explored additional optimizations but found they made it fail certain gradient calculation tests.
+Anthropic gave Claude 3.7 Sonnet a C++ fine-tuning script and told it to optimize the script to run efficiently on a specific hardware configuration. After making the script 7x faster, Claude explored additional optimizations but found they made the script fail certain gradient calculation tests.
 
 ![](https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/4f694dd827dda58b13021d96df0c961b3e2f85fa202cea0c639060091a287625/bzhqsfmazndwffsviijh)
 
@@ -199,7 +199,7 @@ In this reward hack, the reference kernel first allocates intermediate memory co
 
 ![](https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/e137eb21d0d4fbdf47071f1fbadaa05874fb6fb2baa194a70cb6dd458d415649/kvvoiorzlwqzzyxqjdol)
 
-Interestingly, this reward hack (and a few others that the AI CUDA engineer found) was not detected by Sakana and was only found by independent researchers after Sakana released the AI CUDA engineer.
+Interestingly, this reward hack (and a few others that the AI CUDA engineer found) was not detected by Sakana and was only found by independent researchers after Sakana released the AI CUDA engineer and the optimized kernel.
 
 ### More examples
 
