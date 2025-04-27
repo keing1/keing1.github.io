@@ -218,7 +218,7 @@ Here are a few links to other examples of reward hacking:
 
 [^43f0et545em]:  The link discusses ‘specification gaming’, which is an alternative name for reward hacking. 
 
-[^09lgh49bms6]: I plan to keep an up-to-date list of reward hacking examples in this [Google doc](https://docs.google.com/document/d/1SgCs_raVB18OzR4Zfs3W-6xVgjG2z1dIaZdB_3lJyiU/edit?usp=sharing).
+[^09lgh49bms6]: I plan to keep an up-to-date list of LLM reward hacking examples in this [Google doc](https://docs.google.com/document/d/1SgCs_raVB18OzR4Zfs3W-6xVgjG2z1dIaZdB_3lJyiU/edit?usp=sharing).
 
 [^aswsk72v22k]:  Including examples in both the main text and the Appendix. 
 
