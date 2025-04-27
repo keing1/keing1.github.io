@@ -19,7 +19,7 @@ In this post, I will:
 Recent examples of reward hacking (more in [appendix](https://keing1.github.io/2025-04-24-reward-hacking/#appendix))
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-In this section, I provide summaries of two instances of reward hacking in recent frontier models. Many additional examples can be found in the [Appendix](https://keing1.github.io/2025-04-24-reward-hacking/#appendix), and I strongly encourage readers to explore the full set of cases.
+In this section, I provide summaries of two instances of reward hacking in recent frontier models. Many additional examples can be found in the [Appendix](https://keing1.github.io/2025-04-24-reward-hacking/#appendix), and I strongly encourage readers to explore the full set of cases.[^09lgh49bms6]
 
 ### Cheating to win at chess
 
@@ -217,6 +217,8 @@ Here are a few links to other examples of reward hacking:
 *   In their ‘Agent Village’ experiments, the AI digest finds that Claude 3.7 Sonnet and o1 cheat to win the Wikipedia racing game: [https://x.com/AiDigest_/status/1902026975210025181](https://x.com/AiDigest_/status/1902026975210025181)
 
 [^43f0et545em]:  The link discusses ‘specification gaming’, which is an alternative name for reward hacking. 
+
+[^09lgh49bms6]: I plan to keep an up-to-date list of reward hacking examples in this [Google doc](https://docs.google.com/document/d/1bWukcLxtnlUXqKdBmiE5eEJzFdbIgxvUq_JU_h6f1Iw/edit?usp=sharing).
 
 [^aswsk72v22k]:  Including examples in both the main text and the Appendix. 
 
