@@ -7,7 +7,7 @@ mathjax: true
 
 Something’s changed about [reward hacking](https://arxiv.org/pdf/2209.13085) in recent systems. In the past, reward hacks were usually accidents, found by non-general, RL-trained systems. Models would randomly explore different behaviors and would sometimes come across [undesired behaviors that achieved high rewards](https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/)[^43f0et545em]. These hacks were usually either simple or took a long time for the model to learn.
 
-But we’ve seen a different pattern emerge in frontier models over the past year. Instead of stumbling into reward hacks by accident, recent models often reason about how they are evaluated and purposefully take misaligned actions to get high reward. These hacks are often very sophisticated, involving multiple steps. And this isn’t just occurring during model development. Sophisticated reward hacks occur in deployed models made available to hundreds of millions of users.
+But we’ve seen a different pattern emerge in frontier models over the past year. Instead of stumbling into reward hacks by accident, recent models often reason about how they are evaluated and purposefully take misaligned actions to get high reward. These hacks are often very sophisticated, involving multiple steps. And this isn’t just occurring during model development. Sophisticated hacks occur in deployed models made available to hundreds of millions of users.
 
 In this post, I will:
 
