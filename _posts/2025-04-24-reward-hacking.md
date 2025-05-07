@@ -5,7 +5,7 @@ comments: true
 mathjax: true
 ---
 
-Something’s changed about [reward hacking](https://arxiv.org/pdf/2209.13085) in recent systems. In the past, reward hacks were usually accidents, found by non-general, RL-trained systems. Models would randomly explore different behaviors and would sometimes come across [undesired behaviors that achieved high rewards](https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/)[^43f0et545em]. These hacks were usually either simple or took a long time for the model to learn.
+Something’s changed about reward hacking[^029diuf394e] in recent systems. In the past, reward hacks were usually accidents, found by non-general, RL-trained systems. Models would randomly explore different behaviors and would sometimes come across [undesired behaviors that achieved high rewards](https://deepmind.google/discover/blog/specification-gaming-the-flip-side-of-ai-ingenuity/)[^43f0et545em]. These hacks were usually either simple or took a long time for the model to learn.
 
 But we’ve seen a different pattern emerge in frontier models over the past year. Instead of stumbling into reward hacks by accident, recent models often reason about how they are evaluated and purposefully take misaligned actions to get high reward. These hacks are often very sophisticated, involving multiple steps. And this isn’t just occurring during model development. Sophisticated hacks occur in deployed models made available to hundreds of millions of users.
 
@@ -215,6 +215,8 @@ Here are a few links to other examples of reward hacking:
 *   Sakana AI also saw instances of reward hacking in their ‘AI scientist’, which is an agentic scaffold surrounding an LLM designed to automate scientific discovery: [https://sakana.ai/ai-scientist/#the-ai-scientist-bloopers](https://sakana.ai/ai-scientist/#the-ai-scientist-bloopers)
 *   In Apollo’s [in-context scheming](https://arxiv.org/pdf/2412.04984) paper, the authors prompt models to follow goals and then see if models scheme in order to accomplish those goals. The majority of results in the paper are not reward hacking, as the models are strongly nudged to try to accomplish their goal by any means necessary. But some of the models still occasionally scheme even when not strongly nudged to accomplish their goals, which can be seen as a kind of reward hacking.
 *   In their ‘Agent Village’ experiments, the AI digest finds that Claude 3.7 Sonnet and o1 cheat to win the Wikipedia racing game: [https://x.com/AiDigest_/status/1902026975210025181](https://x.com/AiDigest_/status/1902026975210025181)
+
+[^029diuf394e]: The definition of reward hacking I use for this post: For most tasks, there is something we want the model to do (which I'll call the goal), and the literal way that we evaluate how good the model's behavior is (which I'll call the proxy). Reward hacking occurs when a model takes actions that perform well according to the proxy but poorly according to the goal. While some definitions of the term limit reward hacking to scenarios where the proxy is the reward signal used in RL training, I use a broader, more behavioral definition which allows me to talk about reward hacking behavior at both training and inference.
 
 [^43f0et545em]:  The link discusses ‘specification gaming’, which is an alternative name for reward hacking. 
 
