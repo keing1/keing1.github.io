@@ -1,11 +1,19 @@
-sup[role="doc-noteref"]:target:before {
-    display: inline-block !important;
-    height: 0 !important;
-    margin: 0 !important;
-}
-
-.footnote-ref:target:before {
-    display: inline-block !important;
-    height: 0 !important;
-    margin: 0 !important;
+/* For post titles */  
+.intro-header .post-heading h1 {  
+  font-size: 2rem; /* Custom size */  
+}  
+  
+/* For page titles */  
+.intro-header .page-heading h1 {  
+  font-size: 2.5rem; /* Custom size */  
+}  
+  
+/* Desktop responsive sizes */  
+@media (min-width: 1200px) {  
+  .intro-header .post-heading h1 {  
+    font-size: 3rem;  
+  }  
+  .intro-header .page-heading h1 {  
+    font-size: 3.75rem;  
+  }  
 }
