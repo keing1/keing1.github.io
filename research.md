@@ -3,8 +3,6 @@ layout: page
 title: Research
 ---
 
-Below is a list of research that I've worked on.
-
 **Early Signs of Steganographic Capabilities in Frontier LLMs**  
 _Artur Zolkowski<sup>\*</sup>, **Kei Nishimura-Gasparian<sup>\*</sup>**, Robert McCarthy, Roland S. Zimmermann, David Lindner_  
 arXiv 2025  
