@@ -5,8 +5,6 @@ comments: true
 mathjax: true
 ---
 
-## Background
-
 I recently was a co-first author on a [paper](https://arxiv.org/abs/2507.02737) where we evaluated the steganographic capabilities of frontier models. Model monitoring has emerged as a leading strategy for detecting instances of misuse or misalignment, and steganography is one plausible way that models could bypass their monitors. As a result, we believe that evaluations of model steganographic capabilities can inform the safeguards that frontier AI companies put in place to stop undesired model behavior.
 
 One of the types of steganography we studied in our paper is encoded message passing, where one model, the encoder model, tries to encode a secret message in its answer to a cover task. The model fully wins if it both successfully transmits the message (i.e. the decoder model is able to decode the secret message from the answer), and the monitor model does not find the answer suspicious.[^1] In our experiments, the encoder and decoder models were different instances of the same model.  
