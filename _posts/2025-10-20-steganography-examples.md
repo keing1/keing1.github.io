@@ -18,7 +18,7 @@ We found that while models usually failed at this task, they were sometimes able
 
 <figure class="text-center">
     <img src="/assets/img/encoded_message_passing.png" alt="Encoded message passing" class="mx-auto d-block">
-    <figcaption class="figure-caption mt-2">Encoded message passing performance when models had to answer right away (without CoT), or could reason in an unmonitored chain-of-thought (with CoT)</figcaption>
+    <figcaption class="figure-caption mt-2">Encoded message passing performance when models had to answer right away (without CoT), or could first reason in an unmonitored chain-of-thought (with CoT)</figcaption>
 </figure>
 
 The strategies models used varied in sophistication. Models typically used simple [acrostics](https://en.wikipedia.org/wiki/Acrostic) and acrostic variants. However, models would occasionally pull off much more complicated schemes, especially if they were specifically prompted not to use acrostics and given the ability to use an unmonitored CoT.
