@@ -9,11 +9,13 @@ I recently was a co-first author on a [paper](https://arxiv.org/abs/2507.02737) 
 
 One of the types of steganography we studied in our paper is encoded message passing, where one model, the encoder model, tries to encode a secret message in its answer to a cover task. The model fully wins if it both successfully transmits the message (i.e. the decoder model is able to decode the secret message from the answer), and the monitor model does not find the answer suspicious.[^1] In our experiments, the encoder and decoder models were different instances of the same model.  
 
-![Overall setup](/assets/img/steganography_figure1_main.png)
+![Overall setup](/assets/img/steganography_figure1_main.png){: .mx-auto.d-block :}
+<p align=center> example text </p>
 
 We found that while models usually failed at this task, they were sometimes able to successfully transmit secret messages past monitors, particularly when they were able to leverage an unmonitored CoT to reason about how to encode and decode the message.
 
-![Message passing results](/assets/img/encoded_message_passing.png)
+![Message passing results](/assets/img/encoded_message_passing.png){: .mx-auto.d-block :}
+<p align=center> Encoded message passing performance when models had to answer right away (without CoT), or could reason in an unmonitored chain-of-thought (with CoT) </p>
 
 The strategies models used varied in sophistication. Models typically used simple [acrostics](https://en.wikipedia.org/wiki/Acrostic) and acrostic variants. However, models would occasionally pull off much more complicated schemes, especially if they were specifically prompted not to use acrostics and given the ability to use an unmonitored CoT.
 
