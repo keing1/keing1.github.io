@@ -1,4 +1,9 @@
-# Can you find the steganographically hidden message?
+---
+layout: post
+title: Can you find the steganographically hidden message?
+comments: true
+mathjax: true
+---
 
 ## Background
 
