@@ -7,6 +7,11 @@ mathjax: true
 
 I recently was a co-first author on a [paper](https://arxiv.org/abs/2507.02737) where we evaluated the steganographic capabilities of frontier models. Model monitoring has emerged as a leading strategy for detecting instances of misuse or misalignment, and steganography is one plausible way that models could bypass their monitors. As a result, we believe that evaluations of model steganographic capabilities can inform the safeguards that frontier AI companies put in place to stop undesired model behavior.
 
+Models might use steganography for a number of reasons, such as: 
+1. A model could be prompt injected to use steganography if a bad actor wanted to exfiltrate private information that the model had access to. In fact, it was recently [reported](https://www.radware.com/blog/threat-intelligence/shadowleak/) that security researchers created an attack similar to this on OpenAI's Deep Research agent, although it's impossible to know from the outside what monitoring systems OpenAI used.
+2. RL training that penalizes 'bad' communication or reasoning could directly train models to leverage steganography. Researchers have [shown](https://arxiv.org/abs/2410.03768) this can happen in certain settings, although it remains to be seen whether this will emerge in standard model training.
+3. Misaligned models that are aware they are being monitored would be incentivized to use steganography to bypass the monitor. Models are becoming increasingly situationally aware with each subsequent generation, and will soon become aware of the fact that their reasoning traces are readable as text discussing reasoning traces enters their pretraining corpuses.
+
 One of the types of steganography we studied in our paper is encoded message passing, where one model, the encoder model, tries to encode a secret message in its answer to a cover task. The model fully wins if it both successfully transmits the message (i.e. the decoder model is able to decode the secret message from the answer), and the monitor model does not find the answer suspicious.[^1] In our experiments, the encoder and decoder models were different instances of the same model.  
 
 <figure class="text-center">
