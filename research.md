@@ -14,10 +14,10 @@ _Samuel Marks, Johannes Treutlein, Trenton Bricken, Jack Lindsey, Jonathan Marcu
 arXiv 2025  
 [[arXiv]](https://arxiv.org/abs/2503.10965) [[Blog post]](https://www.anthropic.com/research/auditing-hidden-objectives)
 
-**Open Source Replication of the Auditing Game Model Organism**
-_Abhay Sheshadri, Rohan Gupta, Kei Nishimura-Gasparian, Sam Marks, Rowan Wang, Johannes Treutlein_
-Anthropic alignment science blog 2025
-[[Anthropic alignment science blog]](https://alignment.anthropic.com/2025/auditing-mo-replication/)
+**Open Source Replication of the Auditing Game Model Organism**  
+_Abhay Sheshadri, Rohan Gupta, **Kei Nishimura-Gasparian**, Sam Marks, Rowan Wang, Johannes Treutlein_  
+Anthropic Alignment Science Blog 2025  
+[[Anthropic Blog]](https://alignment.anthropic.com/2025/auditing-mo-replication/)
 
 **Reward hacking behavior can generalize across tasks**  
 _**Kei Nishimura-Gasparian**, Isaac Dunn, Henry Sleight, Miles Turpin, Evan Hubinger, Carson Denison, Ethan Perez_  
