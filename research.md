@@ -5,7 +5,7 @@ title: Research
 
 **Early Signs of Steganographic Capabilities in Frontier LLMs**  
 _Artur Zolkowski<sup>\*</sup>, **Kei Nishimura-Gasparian<sup>\*</sup>**, Robert McCarthy, Roland S. Zimmermann, David Lindner_  
-<sup>\*</sup>Equal contribution  
+<sup>\*</sup>Equal contribution  (order randomized)  
 arXiv 2025  
 [[arXiv]](https://arxiv.org/abs/2507.02737) [[Transcript website]](https://steganography-evals-d9297ad0740c.herokuapp.com/) [[Github]](https://github.com/arturzolkowski/steganographic-evals/) [[Tweet thread]](https://x.com/davlindner/status/1941158562857980245)
 
