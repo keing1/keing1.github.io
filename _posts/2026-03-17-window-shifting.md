@@ -5,8 +5,6 @@ comments: true
 mathjax: true
 ---
 
-# Research note on window shifting training
-
 *Authors: Kei Nishimura-Gasparian, Neev Parikh*
 
 *This is a research progress note describing work done during the Astra Fellowship. We do not plan to do any further work on this project, and are sharing this research note for other people in the AI safety community to learn from.*
