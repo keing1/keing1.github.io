@@ -9,6 +9,11 @@ _Artur Zolkowski<sup>\*</sup>, **Kei Nishimura-Gasparian<sup>\*</sup>**, Robert 
 ICLR 2026  
 [[arXiv]](https://arxiv.org/abs/2507.02737) [[Transcript website]](https://steganography-evals-d9297ad0740c.herokuapp.com/) [[Github]](https://github.com/arturzolkowski/steganographic-evals/) [[Tweet thread]](https://x.com/davlindner/status/1941158562857980245)
 
+**Towards Understanding Specification Gaming in Reasoning Models**  
+_**Kei Nishimura-Gasparian**, Robert McCarthy, David Lindner_  
+arXiv 2026  
+[[arXiv]](https://arxiv.org/abs/2605.02269)
+
 **An Independent Safety Evaluation of Kimi K2.5**  
 _Zheng-Xin Yong, Parv Mahajan, Andy Wang, Ida Caspary, Yernat Yestekov, Zora Che, Mosh Levy, Elle Najt, Dennis Murphy, Prashant Kulkarni, Lev McKinney, **Kei Nishimura-Gasparian**, Ram Potham, Aengus Lynch, Michael L Chen_  
 arXiv 2026  
